@@ -8,7 +8,7 @@ from haystack.components.generators import HuggingFaceTGIGenerator
 from haystack import Pipeline
 from haystack.components.builders.prompt_builder import PromptBuilder
 import streamlit as st
-dotenv.load_dotenv()
+# dotenv.load_dotenv()
 
 huggingface_token = os.getenv('HUGGING_FACE_TOKEN')
 # page_by_img ="""
