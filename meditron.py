@@ -71,7 +71,8 @@ keywords:
 """
 
 prompt_template = """
-Answer the question truthfully based on the given documents.
+Answer the question truthfully based on the given documents.Don't end the answer halfway, give the complete answer. 
+If you are unable to give the complete answer just give the summarized version of complete answer within the token limit.
 If the documents don't contain an answer, use your existing knowledge base.
 
 q: {{ question }}
@@ -112,8 +113,8 @@ def ask(question):
   st.write(output['llm']['replies'][0])
 
 def body():
-  text = st.text_input("Please enter some text to generate image")
-  if (st.checkbox("SUBMIT")):
+  text = st.text_input("Please enter some text to generate content")
+  if (st.button("SUBMIT")):
     answer = ask(text)
 
 if __name__ == '__main__':
