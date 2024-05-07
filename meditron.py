@@ -11,15 +11,15 @@ import streamlit as st
 # dotenv.load_dotenv()
 
 huggingface_token = os.getenv('HUGGING_FACE_TOKEN')
-# page_by_img ="""
-# <style>
-# #Mainmenu {visibility : hidden;}
-# footer {visibility : hidden;}
-# header {visibility :hidden;}
-# }
-# </style>
-# """
-# st.markdown(page_by_img,unsafe_allow_html=True)
+page_by_img ="""
+<style>
+#Mainmenu {visibility : hidden;}
+footer {visibility : hidden;}
+header {visibility :hidden;}
+}
+</style>
+"""
+st.markdown(page_by_img,unsafe_allow_html=True)
 
 st.title("MEDITRON....!!!")
 
